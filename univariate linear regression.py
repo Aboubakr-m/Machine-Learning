@@ -32,7 +32,6 @@ def gradientDescent(x, y, theta, alpha, num_itres):
         for n in range(parametars):
             term = np.multiply(cost, x[:, n])
             temp[0, n] = theta[0, n] - ((alpha / m) * np.sum(term))
-    
         theta = temp
         j_history[i] = computeCost(x, y, theta)
     return theta, j_history
