@@ -21,7 +21,6 @@ def computeCost(x, y, theta):
     j = np.power(((x * theta.T)- y), 2)
     return np.sum(j) / (2 * m)
     
-
 def gradientDescent(x, y, theta, alpha, num_itres):
     j_history = np.zeros(num_itres)
     parametars = int(theta.ravel().shape[1])
